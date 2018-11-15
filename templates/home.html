@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+ <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <form id='input' method='post' action='/get_score'> 
+          <p>Name &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; <input type='text' size="50" name='name' placeholder='Luke Skywalker' /></p>
+          <p>Employment Title &emsp; &nbsp; <input type='text' size="50" name='emp_title' placeholder='Savior' /></p>
+          <p>Employment Length &nbsp; <input type='text' size="50" name='ticker' placeholder='1.1 galaxy year' /></p>
+          <p>Loan Amount &ensp; &emsp; &emsp; <input type='text' size="50" name='income' placeholder='$$ equivalent of 12 lightsaber' /></p>
+          <p>Annual Income &emsp; &emsp; <input type='text' size="50" name='income' placeholder='$$ equivalent of 12 lightsaber' /></p>
+          <p>State &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; <input type='text' size="50" name='ticker' placeholder='Tatooine' /></p>
+          <p>Term &emsp;  &emsp; &emsp; &emsp; &emsp; &nbsp;  <input type='text' size="50" name='term' placeholder='36 months' /></p>
+          <p>Interst Rate &emsp; &emsp; &emsp;  <input type='text' size="50" name='ticker' placeholder='10.00%' /></p>
+          <p>Grade &emsp; &emsp; &emsp; &emsp; &emsp; <input type='text' size="50" name='ticker' placeholder='A' /></p>
+          <p>Subgrade &emsp; &emsp; &emsp; &ensp; <input type='text' size="50" name='ticker' placeholder='A1' /></p>
+          <p>Verification Status &nbsp;&nbsp; <input type='text' size="50" name='ticker' placeholder='1.1 galaxy year' /></p>
+          <p>Payment Plan &emsp; &emsp; &nbsp;  <input type='text' size="50" name='ticker' placeholder='10.00%' /></p>
+          <p>Purpose &emsp; &emsp; &emsp; &ensp;&ensp; <input type='text' size="50" name='ticker' placeholder='A1' /></p>
+          <p>Delinquency &emsp; &emsp; &emsp;  <input type='text' size="50" name='ticker' placeholder='10.00%' /></p>
+          <p>Inquiry 6 months &emsp; <input type='text' size="50" name='ticker' placeholder='1.1 galaxy year' /></p>
+          <p>Open Accounts &emsp; &ensp;  <input type='text' size="50" name='ticker' placeholder='10.00%' /></p>
+          <p>Public Record &emsp; &emsp;  <input type='text' size="50" name='ticker' placeholder='10.00%' /></p>
+          <p>Homeowner &emsp; &emsp; &emsp; &nbsp; 
+
+            <label for="homeowner">RENT</label>
+            <input type="radio" name="homeowner" id="RENT" value="RENT"> &emsp;
+
+            <label for="homeowner">MORTGAGE</label>
+            <input type="radio" name="homeowner" id="MORTGAGE" value="MORTGAGE"> &emsp;
+
+            <label for="homeowner">OWN</label>
+            <input type="radio" name="homeowner" id="OWN" value="OWN">
+          </p>
+          <p>
+            <textarea rows="0" cols="50" placeholder="Description of the loan                                                         eg: Darth Vader kidnapped my girlfriend. Need money for ransom.">
+            </textarea>
+          </p>
+
+            <p><input type="submit" value="Submit">&emsp; &emsp;
+              <input type="submit" value="Text Analysis">&emsp; &emsp;
+             <input type="submit" value="Show me the viz"></p>
+          </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}
+
+{% block content2 %}
+<br> <br> <br> <br> 
+<b><center> Probability to default </center></b>
+<div class="box">
+<p> </p>
+<br style = “line-height:100px;”>
+<center><font size="+16" face="verdana" color="black">0.92</font></center>
+</div>
+     
+{% endblock content2 %}
